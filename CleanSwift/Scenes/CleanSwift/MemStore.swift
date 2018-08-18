@@ -20,11 +20,9 @@ class MemStore: StoreProtocol {
     static let description02 = "You'd think they'd never seen a girl and a cat on a broom before"
 
     static let items: [Item] = [
-        Item(title: title01, imageUrl: imageUrl01, description: description01),
-        Item(title: title02, imageUrl: imageUrl02, description: description02)
+        Item(title: title01, imageUrl: imageUrl01, itemDescription: description01),
+        Item(title: title02, imageUrl: imageUrl02, itemDescription: description02)
     ]
-    
-    static let item = Item(title: title01, imageUrl: imageUrl01, description: description01)
     
     func fetchItems(completionHandler: ([Item], StoreError?) -> Void) {
         completionHandler(type(of: self).items, nil)

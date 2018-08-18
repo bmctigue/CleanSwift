@@ -22,7 +22,7 @@ class Presenter: PresentationLogic {
     func presentFetchedItems(response: CleanSwift.FetchItems.Response) {
         var displayed: [CleanSwift.FetchItems.ViewModel.DisplayedItem] = []
         for item in response.items {
-            let displayedItem = CleanSwift.FetchItems.ViewModel.DisplayedItem(title: item.title, imageUrl: item.imageUrl, description: item.description)
+            let displayedItem = CleanSwift.FetchItems.ViewModel.DisplayedItem(title: item.title, imageUrl: item.imageUrl, description: item.itemDescription)
             displayed.append(displayedItem)
         }
         let viewModel = CleanSwift.FetchItems.ViewModel(displayedItems: displayed)

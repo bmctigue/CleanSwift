@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A81019DE20EBBA860092385B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A81019DD20EBBA860092385B /* Podfile */; };
-		A81423D12128A6960015CB17 /* CleanSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86BB20D2125EB6900375474 /* CleanSwiftTests.swift */; };
 		A81423D22128A6B70015CB17 /* CleanSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86BB2132125EB7300375474 /* CleanSwiftUITests.swift */; };
 		A81423E22128BB140015CB17 /* MemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81423D42128BB140015CB17 /* MemStore.swift */; };
 		A81423E32128BB140015CB17 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81423D62128BB140015CB17 /* Cell.swift */; };
@@ -30,6 +29,8 @@
 		A86BB20A2125EB5800375474 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86BB1F62125EB5800375474 /* AppDelegate.swift */; };
 		A8F1644C2128CC5A00A841FC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F1644B2128CC5A00A841FC /* TableViewController.swift */; };
 		A8F1644E2128D3A600A841FC /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F1644D2128D3A600A841FC /* Builder.swift */; };
+		A8F164502128DB6500A841FC /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F1644F2128DB6500A841FC /* ItemTests.swift */; };
+		A8F164522128DD6900A841FC /* ItemInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F164512128DD6900A841FC /* ItemInteractorTests.swift */; };
 		B0749494D7523D1305FB6827 /* Pods_CleanSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35C708C81431EDC14196BF0 /* Pods_CleanSwift.framework */; };
 		B4C45767C931A78FC7D8DE86 /* Pods_CleanSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECBFFC6AF759BC4065AEC783 /* Pods_CleanSwiftTests.framework */; };
 /* End PBXBuildFile section */
@@ -77,12 +78,13 @@
 		A86BB1F52125EB5800375474 /* StoryboardFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardFactory.swift; sourceTree = "<group>"; };
 		A86BB1F62125EB5800375474 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A86BB1F72125EB5800375474 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A86BB20D2125EB6900375474 /* CleanSwiftTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanSwiftTests.swift; sourceTree = "<group>"; };
 		A86BB20E2125EB6900375474 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A86BB2122125EB7300375474 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A86BB2132125EB7300375474 /* CleanSwiftUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanSwiftUITests.swift; sourceTree = "<group>"; };
 		A8F1644B2128CC5A00A841FC /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		A8F1644D2128D3A600A841FC /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		A8F1644F2128DB6500A841FC /* ItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
+		A8F164512128DD6900A841FC /* ItemInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInteractorTests.swift; sourceTree = "<group>"; };
 		C49A0476AF9F286651E79B7D /* Pods-CleanSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleanSwiftTests/Pods-CleanSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		ECBFFC6AF759BC4065AEC783 /* Pods_CleanSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35C708C81431EDC14196BF0 /* Pods_CleanSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,8 +213,9 @@
 		A86BB20C2125EB6900375474 /* CleanSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				A86BB20D2125EB6900375474 /* CleanSwiftTests.swift */,
 				A86BB20E2125EB6900375474 /* Info.plist */,
+				A8F1644F2128DB6500A841FC /* ItemTests.swift */,
+				A8F164512128DD6900A841FC /* ItemInteractorTests.swift */,
 			);
 			path = CleanSwiftTests;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 					};
 					A81019AE20EBB0C20092385B = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 						TestTargetID = A810199A20EBB0BE0092385B;
 					};
 					A81019B920EBB0C20092385B = {
@@ -477,7 +481,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A81423D12128A6960015CB17 /* CleanSwiftTests.swift in Sources */,
+				A8F164502128DB6500A841FC /* ItemTests.swift in Sources */,
+				A8F164522128DD6900A841FC /* ItemInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +679,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 462PHCYTGY;
 				INFOPLIST_FILE = CleanSwiftTests/Info.plist;
@@ -684,6 +690,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiguer.CleanSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanSwift.app/CleanSwift";
@@ -696,6 +703,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 462PHCYTGY;
 				INFOPLIST_FILE = CleanSwiftTests/Info.plist;
