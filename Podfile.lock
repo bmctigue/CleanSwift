@@ -1,0 +1,24 @@
+PODS:
+  - Dwifft (0.8)
+  - Kingfisher (4.7.0)
+  - SwiftyJSON (4.1.0)
+
+DEPENDENCIES:
+  - Dwifft
+  - Kingfisher
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Dwifft
+    - Kingfisher
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Dwifft: 463e61d07322fdf83b32ee6975ca1b20708db746
+  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+
+PODFILE CHECKSUM: a1b306d54c5700eeb753d1626069e6329993cd53
+
+COCOAPODS: 1.5.2
