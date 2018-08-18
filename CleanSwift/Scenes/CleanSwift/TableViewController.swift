@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Dwifft
 
 protocol DisplayLogic: class {
     func displayFetchedItems(viewModel: CleanSwift.FetchItems.ViewModel)

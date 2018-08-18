@@ -5,7 +5,6 @@ def shared_pods
     use_frameworks!
     pod 'SwiftyJSON'
     pod 'Kingfisher'
-    pod 'Dwifft'
 end
 
 target 'CleanSwift' do
