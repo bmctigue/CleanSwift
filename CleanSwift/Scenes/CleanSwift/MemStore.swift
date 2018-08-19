@@ -9,7 +9,7 @@
 import Foundation
 
 class MemStore: StoreProtocol {
-    
+
     static let title01 = "Space Keybaord Question"
     static let title02 = "Jiji"
     
@@ -24,7 +24,13 @@ class MemStore: StoreProtocol {
         Item(title: title02, imageUrl: imageUrl02, itemDescription: description02)
     ]
     
-    func fetchItems(completionHandler: @escaping ([Item], StoreError?) -> Void) {
+    var urlString: String?
+    
+    init(urlString: String?) {
+        self.urlString = urlString
+    }
+    
+    func fetchItems(urlString: String?, completionHandler: @escaping ([Item], StoreError?) -> Void) {
         completionHandler(type(of: self).items, nil)
     }
 }

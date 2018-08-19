@@ -9,25 +9,30 @@
 import Foundation
 
 class JsonStore: StoreProtocol {
+    var urlString: String?
     
-    func fetchItems(completionHandler: @escaping ([Item], StoreError?) -> Void) {
-        let urlString = "https://api.myjson.com/bins/161tsc"
-        guard let url = URL(string: urlString) else { return }
-        
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if error != nil {
-                print(error!.localizedDescription)
-            }
-            
-            guard let data = data else { return }
-            do {
-                let items = try JSONDecoder().decode([Item].self, from: data)
-                completionHandler(items, nil)
+    init(urlString: String?) {
+        self.urlString = urlString
+    }
+    
+    func fetchItems(urlString: String?, completionHandler: @escaping ([Item], StoreError?) -> Void) {
+        if let urlString = urlString {
+            guard let url = URL(string: urlString) else { return }
+            URLSession.shared.dataTask(with: url) { (data, response, error) in
+                if error != nil {
+                    print(error!.localizedDescription)
+                }
                 
-            } catch let jsonError {
-                print(jsonError)
-            }
-            
-        }.resume()
+                guard let data = data else { return }
+                do {
+                    let items = try JSONDecoder().decode([Item].self, from: data)
+                    completionHandler(items, nil)
+                    
+                } catch let jsonError {
+                    print(jsonError)
+                }
+                
+            }.resume()
+        }
     }
 }
