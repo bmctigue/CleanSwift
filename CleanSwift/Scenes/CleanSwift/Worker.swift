@@ -9,7 +9,7 @@
 import Foundation
 
 protocol StoreProtocol: class {
-    func fetchItems(completionHandler: ([Item], StoreError?) -> Void)
+    func fetchItems(completionHandler: @escaping ([Item], StoreError?) -> Void)
 }
 
 class Worker {

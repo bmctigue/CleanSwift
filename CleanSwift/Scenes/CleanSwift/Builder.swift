@@ -14,7 +14,7 @@ class Builder {
     
     init(viewController: CleanSwiftable) {
         self.viewController = viewController
-        let store = MemStore()
+        let store = JsonStore()
         let presenter = Presenter(controller: viewController)
         let interactor = Interactor(presenter: presenter, store: store)
         viewController.interactor = interactor

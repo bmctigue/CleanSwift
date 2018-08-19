@@ -24,7 +24,7 @@ class MemStore: StoreProtocol {
         Item(title: title02, imageUrl: imageUrl02, itemDescription: description02)
     ]
     
-    func fetchItems(completionHandler: ([Item], StoreError?) -> Void) {
+    func fetchItems(completionHandler: @escaping ([Item], StoreError?) -> Void) {
         completionHandler(type(of: self).items, nil)
     }
 }

@@ -23,7 +23,7 @@ class Interactor: BusinessLogic {
     }
     
     func fetchItems(request: CleanSwift.FetchItems.Request) {
-        worker.fetchItems { (items) -> Void in
+        worker.fetchItems { (items) in
             let response = CleanSwift.FetchItems.Response(items: items)
             self.presenter.presentFetchedItems(response: response)
         }
