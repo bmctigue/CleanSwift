@@ -18,7 +18,6 @@
 		A81423E92128BB150015CB17 /* TableViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81423DC2128BB140015CB17 /* TableViewController+TableViewDataSource.swift */; };
 		A81423EA2128BB150015CB17 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81423DD2128BB140015CB17 /* Presenter.swift */; };
 		A81423EC2128BB150015CB17 /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81423DF2128BB140015CB17 /* Worker.swift */; };
-		A81423ED2128BB150015CB17 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81423E02128BB140015CB17 /* Api.swift */; };
 		A81423EE2128BB150015CB17 /* TableViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81423E12128BB140015CB17 /* TableViewController+TableViewDelegate.swift */; };
 		A81423F02128C9B50015CB17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81423EF2128C9B50015CB17 /* Main.storyboard */; };
 		A81423F22128C9DE0015CB17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81423F12128C9DE0015CB17 /* ViewController.swift */; };
@@ -69,7 +68,6 @@
 		A81423DC2128BB140015CB17 /* TableViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
 		A81423DD2128BB140015CB17 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		A81423DF2128BB140015CB17 /* Worker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
-		A81423E02128BB140015CB17 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		A81423E12128BB140015CB17 /* TableViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		A81423EF2128C9B50015CB17 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A81423F12128C9DE0015CB17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 				A81423D42128BB140015CB17 /* MemStore.swift */,
 				A8F164532128EEC600A841FC /* JsonStore.swift */,
 				A81423DA2128BB140015CB17 /* Item.storyboard */,
-				A81423E02128BB140015CB17 /* Api.swift */,
 				A81423D52128BB140015CB17 /* Cells */,
 			);
 			name = CleanSwift;
@@ -474,7 +471,6 @@
 				A81423EE2128BB150015CB17 /* TableViewController+TableViewDelegate.swift in Sources */,
 				A8F1644C2128CC5A00A841FC /* TableViewController.swift in Sources */,
 				A81423E62128BB140015CB17 /* ViewModel.swift in Sources */,
-				A81423ED2128BB150015CB17 /* Api.swift in Sources */,
 				A81423F22128C9DE0015CB17 /* ViewController.swift in Sources */,
 				A8F1644E2128D3A600A841FC /* Builder.swift in Sources */,
 				A8F164542128EEC600A841FC /* JsonStore.swift in Sources */,
