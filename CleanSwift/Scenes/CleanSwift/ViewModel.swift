@@ -15,22 +15,10 @@ enum CleanSwift {
             var items: [Item]
         }
         struct ViewModel {
-            struct DisplayedItem: Equatable {
+            struct DisplayedItem {
                 var title: String
                 var imageUrl: String
                 var description: String
-                
-                var hashValue: Int {
-                    var hashValues: [Int] = []
-                    hashValues.append(title.hashValue)
-                    hashValues.append(imageUrl.hashValue)
-                    hashValues.append(description.hashValue)
-                    return Utilities.sharedInstance.hashSequence(hashValues: hashValues)
-                }
-                
-                static func == (lhs: DisplayedItem, rhs: DisplayedItem) -> Bool {
-                    return lhs.hashValue == rhs.hashValue
-                }
             }
             var displayedItems: [DisplayedItem]
         }

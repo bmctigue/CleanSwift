@@ -23,7 +23,7 @@ class ItemInteractorTests: XCTestCase {
     
     var item: Item!
     var sut: Interactor!
-    let store = MemStore()
+    let store = MemStore(urlString: nil)
     let tableViewController = TestTableViewController()
     var presenter: PresentationLogic!
     
