@@ -22,8 +22,10 @@ class MemStoreTests: XCTestCase {
         let expectation = self.expectation(description: "FetchItems")
         
         self.store.fetchItems(urlString: store.urlString, completionHandler: { (items,error) in
-            self.jsonItems = items
-            expectation.fulfill()
+            if error == nil {
+                self.jsonItems = items
+                expectation.fulfill()
+            }
         })
         
         waitForExpectations(timeout: 3.0, handler: nil)
