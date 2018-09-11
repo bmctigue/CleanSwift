@@ -13,7 +13,7 @@ protocol PresentationLogic: class {
 }
 
 class Presenter: PresentationLogic {
-    weak var viewController: CleanSwiftable?
+    private weak var viewController: CleanSwiftable?
     
     init(controller: CleanSwiftable) {
         self.viewController = controller

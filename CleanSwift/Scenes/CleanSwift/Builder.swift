@@ -10,7 +10,7 @@ import Foundation
 
 class Builder {
     
-    weak var viewController: CleanSwiftable?
+    private weak var viewController: CleanSwiftable?
     
     init(viewController: CleanSwiftable) {
         self.viewController = viewController

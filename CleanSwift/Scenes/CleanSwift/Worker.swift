@@ -15,7 +15,7 @@ protocol StoreProtocol: class {
 
 class Worker {
     
-    var store: StoreProtocol!
+    private var store: StoreProtocol!
     
     init(store: StoreProtocol) {
         self.store = store
