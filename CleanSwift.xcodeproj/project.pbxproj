@@ -188,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				A81423D32128BB140015CB17 /* CleanSwift */,
-				A86BB1EB2125EB5800375474 /* Assets.xcassets */,
 				A86BB1EC2125EB5800375474 /* Utils */,
 				A86BB1F42125EB5800375474 /* Factories */,
 				A86BB1F62125EB5800375474 /* AppDelegate.swift */,
@@ -197,6 +196,7 @@
 				A86BB1F02125EB5800375474 /* LaunchScreen.storyboard */,
 				A81423F12128C9DE0015CB17 /* ViewController.swift */,
 				A887133A2129A4990086D2E3 /* Constants.swift */,
+				A86BB1EB2125EB5800375474 /* Assets.xcassets */,
 			);
 			path = CleanSwift;
 			sourceTree = "<group>";

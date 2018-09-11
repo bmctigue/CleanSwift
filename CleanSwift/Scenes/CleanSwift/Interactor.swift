@@ -14,8 +14,8 @@ protocol BusinessLogic: class {
 
 class Interactor: BusinessLogic {
     
-    private var presenter: PresentationLogic!
-    private var worker: Worker!
+    var presenter: PresentationLogic!
+    var worker: Worker!
     
     init(presenter: PresentationLogic, store: StoreProtocol) {
         self.presenter = presenter
